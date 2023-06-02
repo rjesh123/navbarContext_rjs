@@ -8,14 +8,14 @@ const Home = () => (
       const {isDarkTheme} = value
 
       const homeContainer = isDarkTheme
-        ? 'home-container light-home'
-        : 'home-container dark-home'
+        ? 'home-container dark-home'
+        : 'home-container light-home'
       const homeImgUrl = isDarkTheme
-        ? 'https://assets.ccbp.in/frontend/react-js/home-light-img.png'
-        : 'https://assets.ccbp.in/frontend/react-js/home-dark-img.png'
+        ? 'https://assets.ccbp.in/frontend/react-js/home-dark-img.png'
+        : 'https://assets.ccbp.in/frontend/react-js/home-light-img.png'
       const homeHeading = isDarkTheme
-        ? 'heading light-home-heading'
-        : 'heading dark-home-heading'
+        ? 'heading dark-home-heading'
+        : 'heading light-home-heading'
 
       return (
         <>

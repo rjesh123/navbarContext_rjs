@@ -8,11 +8,11 @@ const NotFound = () => (
       const {isDarkTheme} = value
 
       const randomContainer = isDarkTheme
-        ? 'random-container light-random'
-        : 'random-container dark-random'
+        ? 'random-container dark-random'
+        : 'random-container light-random'
       const randomHeading = isDarkTheme
-        ? 'heading light-random-heading'
-        : 'heading dark-random-heading'
+        ? 'heading dark-random-heading'
+        : 'heading light-random-heading'
 
       return (
         <>

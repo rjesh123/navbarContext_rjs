@@ -6,16 +6,17 @@ const About = () => (
   <ThemeContext.Consumer>
     {value => {
       const {isDarkTheme} = value
+      console.log(isDarkTheme)
 
       const aboutContainer = isDarkTheme
-        ? 'about-container light-about'
-        : 'about-container dark-about'
+        ? 'about-container dark-about'
+        : 'about-container light-about'
       const aboutImgUrl = isDarkTheme
-        ? 'https://assets.ccbp.in/frontend/react-js/about-light-img.png'
-        : 'https://assets.ccbp.in/frontend/react-js/about-dark-img.png'
+        ? 'https://assets.ccbp.in/frontend/react-js/about-dark-img.png'
+        : 'https://assets.ccbp.in/frontend/react-js/about-light-img.png'
       const aboutHeading = isDarkTheme
-        ? 'heading light-about-heading'
-        : 'heading dark-about-heading'
+        ? 'heading dark-about-heading'
+        : 'heading light-about-heading'
 
       return (
         <>

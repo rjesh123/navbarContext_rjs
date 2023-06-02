@@ -7,16 +7,16 @@ const Navbar = () => (
     {value => {
       const {isDarkTheme, toggleTheme} = value
       const navbarBgClassName = isDarkTheme
-        ? 'navbar-container light-nav'
-        : 'navbar-container dark-nav'
+        ? 'navbar-container dark-nav'
+        : 'navbar-container light-nav'
       const websiteLogoUrl = isDarkTheme
-        ? 'https://assets.ccbp.in/frontend/react-js/website-logo-light-theme-img.png'
-        : 'https://assets.ccbp.in/frontend/react-js/website-logo-dark-theme-img.png'
+        ? 'https://assets.ccbp.in/frontend/react-js/website-logo-dark-theme-img.png'
+        : 'https://assets.ccbp.in/frontend/react-js/website-logo-light-theme-img.png'
       const themeLogoUrl = isDarkTheme
-        ? 'https://assets.ccbp.in/frontend/react-js/dark-theme-img.png'
-        : 'https://assets.ccbp.in/frontend/react-js/light-theme-img.png'
-      const linkClassName = isDarkTheme ? 'link dark-color' : 'link light-color'
-    
+        ? 'https://assets.ccbp.in/frontend/react-js/light-theme-img.png'
+        : 'https://assets.ccbp.in/frontend/react-js/dark-theme-img.png'
+      const linkClassName = isDarkTheme ? 'link light-color' : 'link dark-color'
+
       const onChangeToggleTheme = event => {
         toggleTheme(event.target.value)
       }
@@ -26,7 +26,7 @@ const Navbar = () => (
           <div className="navbar-responsive-container">
             <img
               src={websiteLogoUrl}
-              alt='website logo'
+              alt="website logo"
               className="website-logo"
             />
             <ul className="link-items-container">
@@ -47,11 +47,7 @@ const Navbar = () => (
               onClick={onChangeToggleTheme}
               className="theme-button"
             >
-              <img
-                src={themeLogoUrl}
-                alt='theme'
-                className="theme-img"
-              />
+              <img src={themeLogoUrl} alt="theme" className="theme-img" />
             </button>
           </div>
         </div>
